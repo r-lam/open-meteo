@@ -10,8 +10,9 @@ pipeline {
     stage('Deploy App') {
       steps {
         script {
-          withKubeConfig([credentialsId: 'eks1', serverUrl: 'https://kubernetes.default'])
-          sh 'kubectl apply -f deployment.yaml'
+          withKubeConfig([credentialsId: 'eks1', serverUrl: 'https://kubernetes.default']) {
+            sh 'kubectl apply -f deployment.yaml'
+          }
         }
       }
     }
