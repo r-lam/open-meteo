@@ -28,7 +28,7 @@ metadata:
   name: open-meteo
   namespace: grafana-operator
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: open-meteo
   ports:
