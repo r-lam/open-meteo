@@ -4,6 +4,8 @@
 
 
 
+
+
 Open-Meteo is an open-source weather API and offers free access for non-commercial use. No API key is required. You can use it immediately!
 
 Head over to https://open-meteo.com! Stay up to date with our blog at https://openmeteo.substack.com.
