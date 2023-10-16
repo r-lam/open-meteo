@@ -1,6 +1,6 @@
 pipeline {
   triggers {
-    githubPush()
+    pollSCM('')
   }
   agent {
     kubernetes {
