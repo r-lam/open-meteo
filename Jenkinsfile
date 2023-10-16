@@ -1,5 +1,8 @@
 pipeline {
   agent {
+    triggers {
+      githubPush()
+    }
     kubernetes {
       	cloud 'kubernetes'
       	label 'default'
